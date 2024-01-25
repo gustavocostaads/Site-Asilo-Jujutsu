@@ -5,7 +5,7 @@ function meuEscopo() {
     const pessoas = [];
   
     function recebeEventoForm(evento) {
-      evento.preventDefault();
+        evento.preventDefault();
   
       const nome = form.querySelector(".nome").value;
       const nomeArtistico = form.querySelector(".nomeArtistico").value;
@@ -28,6 +28,8 @@ function meuEscopo() {
         cosJujutsu: cosJujutsu,
         cosOutros: cosOutros,
       });
+
+      console.log(pessoas)
   
       resultado.innerHTML += `<p>
       <strong>Nome:</strong> ${nome}<br>
@@ -43,6 +45,9 @@ function meuEscopo() {
     }
   
     form.addEventListener("submit", recebeEventoForm);
-  }
+
+   
+
+  };
   
   meuEscopo();
